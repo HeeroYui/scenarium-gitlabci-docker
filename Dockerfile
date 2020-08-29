@@ -14,10 +14,10 @@ ARG USER_HOME_DIR="/root"
 
 
 ####################################################################################
-## install ant & others ...
+## install others ...
 ####################################################################################
 
-RUN apk update && apk add --no-cache curl tar bash procps apache-ant unzip wget openssh-client git
+RUN apk update && apk add --no-cache gawk curl tar bash procps unzip wget openssh-client git
 
 ####################################################################################
 ## install Java FX
