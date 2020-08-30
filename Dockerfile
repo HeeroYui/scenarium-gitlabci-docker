@@ -29,24 +29,6 @@ RUN wget -O ${USER_HOME_DIR}/javaFXSDK.zip ${BASE_URL}/javafx-14-sdk-linux/
 
 RUN unzip ${USER_HOME_DIR}/javaFXSDK.zip -d ${USER_HOME_DIR}/javaFXSDK
 
-####################################################################################
-## install Junit standalone
-####################################################################################
-
-ARG JUNIT_VERSION=1.5.2
-ARG BASE_URL=https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone
-
-RUN wget -O ${USER_HOME_DIR}/junit.jar ${BASE_URL}/${JUNIT_VERSION}/junit-platform-console-standalone-${JUNIT_VERSION}.jar
-
-####################################################################################
-## install checkstyle
-####################################################################################
-
-ARG CHECKSTYLE_VERSION=8.34
-ARG BASE_URL=https://github.com/checkstyle/checkstyle/releases/download
-
-RUN wget ${BASE_URL}/checkstyle-${CHECKSTYLE_VERSION}/checkstyle-${CHECKSTYLE_VERSION}-all.jar -O ${USER_HOME_DIR}/checkstyle.jar
-
 ###################################################################################
 ## install maven
 ####################################################################################
