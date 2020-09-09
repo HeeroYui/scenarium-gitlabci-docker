@@ -1,6 +1,6 @@
 FROM openjdk:14-alpine
 
-RUN apk update && apk add apache-ant unzip wget openssh-client git gawk curl tar bash
+RUN apk update && apk upgrade && apk add apache-ant unzip wget openssh-client git gawk curl tar bash
 
 ###################################################################################
 ## install tools for ant
