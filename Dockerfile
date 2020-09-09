@@ -1,4 +1,4 @@
-FROM openjdk:14-alpine
+FROM openjdk:16-alpine
 
 RUN apk update && apk upgrade && apk add apache-ant unzip wget openssh-client git gawk curl tar bash
 
