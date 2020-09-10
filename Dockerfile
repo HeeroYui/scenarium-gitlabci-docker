@@ -9,7 +9,7 @@ RUN pacman -S --noconfirm jdk-openjdk java-openjfx
 # intall maven & gradle
 RUN pacman -S --noconfirm maven gradle
 # clean all the caches
-pacman -Scc --noconfirm
+RUN pacman -Scc --noconfirm
 
 ENV LANG=C.UTF-8
 ENV JAVA_HOME=/usr/lib/jvm/java-14-openjdk
